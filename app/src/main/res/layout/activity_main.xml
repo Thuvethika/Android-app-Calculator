@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0074C34A"
+    android:backgroundTint="@android:color/darker_gray"
+    tools:context=".MainActivity">
+
+    <!-- Text View to display our basic heading of "calculator"-->
+
+    <!-- Edit Text View to input the values -->
+
+    <!-- Edit Text View to input 2nd value-->
+
+    <TextView
+        android:layout_width="361dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="200dp"
+        android:scrollbarSize="30dp"
+        android:text="My Calculator"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#0E31F4"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <!-- Text View to display result -->
+
+    <!-- A button to perform 'sum' operation -->
+
+    <!-- A button to perform subtraction operation. -->
+
+    <!-- A button to perform division. -->
+
+    <!-- A button to perform multiplication. -->
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="364dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="416dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="number"
+        android:onClick="clearTextNum1"
+        android:text="Enter value 1"
+        android:textColor="#0E31F4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.346"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.194" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="364dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="300dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="number"
+        android:onClick="clearTextNum2"
+        android:text="Enter value 2"
+        android:textColor="#0E31F4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.346"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.26" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="282dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="151dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="287dp"
+        android:background="@android:color/white"
+        android:text="Result"
+        android:textAlignment="textStart"
+        android:textColor="#0E31F4"
+        android:textColorLink="#592AAC"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.305" />
+
+    <Button
+        android:id="@+id/sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="292dp"
+        android:layout_marginEnd="400dp"
+        android:layout_marginBottom="263dp"
+        android:backgroundTint="@color/purple_500"
+        android:onClick="doSum"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.247"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.249" />
+
+    <!-- A button to perform a modulus function. -->
+
+    <!-- A button to perform a power function. -->
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="292dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="263dp"
+        android:backgroundTint="@color/purple_500"
+        android:onClick="doSub"
+        android:text="sub"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.301"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.249" />
+
+    <Button
+        android:id="@+id/div"
+        android:layout_width="87dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="392dp"
+        android:layout_marginEnd="400dp"
+        android:layout_marginBottom="163dp"
+        android:backgroundTint="@color/purple_500"
+        android:onClick="doDiv"
+        android:text="div"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.223"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.264" />
+
+    <Button
+        android:id="@+id/mul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="292dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="263dp"
+        android:backgroundTint="@color/purple_500"
+        android:onClick="doMul"
+        android:text="mul"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.354"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.249" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="85dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="392dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="163dp"
+        android:backgroundTint="@color/purple_500"
+        android:onClick="doMod"
+        android:text="mod"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.291"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.263" />
+
+    <Button
+        android:id="@+id/pow"
+        android:layout_width="91dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="392dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="163dp"
+        android:backgroundTint="@color/purple_500"
+        android:onClick="doPow"
+        android:text="Pow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.366"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.26" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
